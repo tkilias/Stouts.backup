@@ -18,8 +18,6 @@
   with_items:
     - cronie
     - gzip
-    - python-boto
-    - s3cmd
 
 - set_fact: backup_duplicity_pkg="{{backup_duplicity_pkg}}-{{backup_duplicity_version}}"
   when: backup_duplicity_version
